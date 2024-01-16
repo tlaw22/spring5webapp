@@ -38,10 +38,10 @@ public class BootStrapData implements CommandLineRunner {
 
         Author eric = new Author("Eric", "Evans");
         Book ddd = new Book("Domain Driven Design", "123123");
-        eric.getBooks().add(ddd);
+        eric.getBooks().add(ddd); // Assigning books to authors
         ddd.getAuthors().add(eric);
 
-        ddd.setPublisher(publisher);
+        ddd.setPublisher(publisher); // Assigning books to publisher
         publisher.getBooks().add(ddd);
 
         authorRepository.save(eric);

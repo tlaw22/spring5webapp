@@ -10,4 +10,5 @@ public class Spring5webappApplication {
 		SpringApplication.run(Spring5webappApplication.class, args);
 	} 
 	// test app
+	// JDBC string: jdbc:h2:mem:testdb
 }
